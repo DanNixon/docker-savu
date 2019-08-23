@@ -1,0 +1,13 @@
+#!/bin/bash
+
+VERSION=$1
+
+docker run \
+  --rm \
+  --interactive \
+  --tty \
+  --env PUID=`id -u` \
+  --env PGID=`id -g` \
+  --volume "$PWD:/home/savu" \
+  dannixon/savu:${VERSION} \
+  /miniconda/bin/savu_config ${@:2}

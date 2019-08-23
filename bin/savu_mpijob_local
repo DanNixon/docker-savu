@@ -1,0 +1,21 @@
+#!/bin/bash
+
+VERSION=$1
+DATA_PATH=$2
+PROCESS_LIST=$3
+OUTPUT_PATH=$4
+
+mkdir -p "${OUTPUT_PATH}"
+
+docker run \
+  --rm \
+  --interactive \
+  --tty \
+  --runtime=nvidia \
+  --env PUID=`id -u` \
+  --env PGID=`id -g` \
+  --volume ${DATA_PATH}:/savu_data \
+  --volume ${PROCESS_LIST}:/savu_process_list.nxs \
+  --volume ${OUTPUT_PATH}:/savu_output \
+  dannixon/savu:${VERSION} \
+  savu_mpijob_local.sh /savu_data /savu_process_list.nxs /savu_output
