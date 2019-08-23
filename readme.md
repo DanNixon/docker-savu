@@ -1,5 +1,8 @@
 # Savu in Docker
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/dannixon/savu)](https://hub.docker.com/r/dannixon/savu)
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/dannixon/savu)](https://hub.docker.com/r/dannixon/savu/builds)
+
 [Savu](https://github.com/DiamondLightSource/Savu) running in Docker.
 
 Based on the old (AFAIK unmaintained) [Dockerfile in the Savu repo](https://github.com/DiamondLightSource/Savu/tree/master/docker-image).
