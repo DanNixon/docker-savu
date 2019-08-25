@@ -1,11 +1,11 @@
 # Savu in Docker
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/dannixon/savu)](https://hub.docker.com/r/dannixon/savu)
-[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/dannixon/savu)](https://hub.docker.com/r/dannixon/savu/builds)
 
 [Savu](https://github.com/DiamondLightSource/Savu) running in Docker.
 
-Based on the old (AFAIK unmaintained) [Dockerfile in the Savu repo](https://github.com/DiamondLightSource/Savu/tree/master/docker-image).
+Based on the [Dockerfile in the Savu repo](https://github.com/DiamondLightSource/Savu/tree/master/docker-image).
+I think this maybe is now maintained, as I no longer really work with Savu you may be better off using that image.
 
 Ideally should be used with [nvidia-docker](https://github.com/NVIDIA/nvidia-docker) runtime, but will function without it (using only CPU algorithms).
 
